@@ -1,25 +1,18 @@
 /*
-Class user - contains money, keranjang (shopping cart) and functions to add money and checkout.
+Class user - contains keranjang (shopping cart) and functions to checkout.
 Also be able to check order history
 */
 class User {
-    var money: Double
     var keranjang: Keranjang
     var orderHistory: [Keranjang]
     
-    init(money: Double, keranjang: Keranjang, orderHistory: [Keranjang]) {
-        self.money = money
+    init(keranjang: Keranjang, orderHistory: [Keranjang]) {
         self.keranjang = keranjang
         self.orderHistory = orderHistory
     }
     
-    func addMoney(amount: Double) {
-        money += amount
-    }
-    
-    func checkout() -> Bool {
-        if money >= keranjang.totalPrice {
-            money -= keranjang.totalPrice
+    func checkout(payment: Double) -> Bool {
+        if payment >= keranjang.totalPrice && payment > 0 {
             orderHistory.append(keranjang)
             keranjang = Keranjang(items: [], totalPrice: 0)
             return true
@@ -27,6 +20,7 @@ class User {
             return false
         }
     }
+    
     func checkOrderHistory() -> [Keranjang] {
         return orderHistory
     }
