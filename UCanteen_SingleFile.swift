@@ -271,31 +271,73 @@ func shopMenu(shop: Shop, user: User) {
 
 // MARK: - Create Shops Function
 func createShops() -> [Shop] {
-    // Create sample menu items for Shop 1
+    // Shop 1: Warung Makan Ibu Siti (Indonesian Main Dishes)
     let shop1Menu = [
-        Menu(name: "Nasi Goreng", price: 15000, description: "Fried rice with vegetables"),
-        Menu(name: "Mie Goreng", price: 13000, description: "Fried noodles"),
-        Menu(name: "Ayam Goreng", price: 18000, description: "Fried chicken with rice")
+        Menu(name: "Nasi Goreng Spesial", price: 15000, description: "Special fried rice with egg, chicken, and vegetables"),
+        Menu(name: "Nasi Goreng Seafood", price: 20000, description: "Fried rice with shrimp, squid, and fish"),
+        Menu(name: "Mie Goreng", price: 13000, description: "Fried noodles with vegetables and chicken"),
+        Menu(name: "Mie Goreng Jawa", price: 14000, description: "Javanese style sweet fried noodles"),
+        Menu(name: "Ayam Goreng Kremes", price: 18000, description: "Crispy fried chicken with rice and sambal"),
+        Menu(name: "Ayam Bakar", price: 19000, description: "Grilled chicken with sweet soy sauce and rice"),
+        Menu(name: "Nasi Uduk", price: 12000, description: "Coconut rice with fried chicken and sambal"),
+        Menu(name: "Cap Cay", price: 16000, description: "Stir-fried mixed vegetables with rice")
     ]
     
-    // Create sample menu items for Shop 2
+    // Shop 2: Kantin Pak Budi (Soups & Traditional Food)
     let shop2Menu = [
-        Menu(name: "Soto Ayam", price: 12000, description: "Chicken soup"),
-        Menu(name: "Bakso", price: 10000, description: "Meatball soup"),
-        Menu(name: "Gado-Gado", price: 11000, description: "Vegetable salad with peanut sauce")
+        Menu(name: "Soto Ayam", price: 12000, description: "Yellow chicken soup with rice cake and vermicelli"),
+        Menu(name: "Soto Betawi", price: 14000, description: "Jakarta style beef soup with coconut milk"),
+        Menu(name: "Bakso Original", price: 10000, description: "Meatball soup with noodles"),
+        Menu(name: "Bakso Urat", price: 12000, description: "Tendon meatball soup with noodles"),
+        Menu(name: "Bakso Jumbo", price: 15000, description: "Jumbo size meatball soup"),
+        Menu(name: "Gado-Gado", price: 11000, description: "Vegetable salad with peanut sauce"),
+        Menu(name: "Pecel Lele", price: 13000, description: "Fried catfish with rice and sambal"),
+        Menu(name: "Rawon", price: 15000, description: "Black beef soup with rice")
     ]
     
-    // Create sample menu items for Shop 3
+    // Shop 3: Minuman Segar (Beverages & Drinks)
     let shop3Menu = [
-        Menu(name: "Es Teh", price: 3000, description: "Iced tea"),
-        Menu(name: "Es Jeruk", price: 5000, description: "Orange juice"),
-        Menu(name: "Kopi", price: 4000, description: "Coffee")
+        Menu(name: "Es Teh Manis", price: 3000, description: "Sweet iced tea"),
+        Menu(name: "Es Teh Tawar", price: 2000, description: "Unsweetened iced tea"),
+        Menu(name: "Teh Panas", price: 2000, description: "Hot tea"),
+        Menu(name: "Es Jeruk", price: 5000, description: "Fresh orange juice"),
+        Menu(name: "Es Kelapa", price: 6000, description: "Young coconut water"),
+        Menu(name: "Es Campur", price: 8000, description: "Mixed ice dessert with fruits and jelly"),
+        Menu(name: "Kopi Hitam", price: 4000, description: "Black coffee"),
+        Menu(name: "Kopi Susu", price: 6000, description: "Coffee with milk"),
+        Menu(name: "Cappuccino", price: 10000, description: "Italian style cappuccino"),
+        Menu(name: "Es Coklat", price: 7000, description: "Iced chocolate drink"),
+        Menu(name: "Jus Alpukat", price: 8000, description: "Avocado juice"),
+        Menu(name: "Jus Mangga", price: 7000, description: "Mango juice")
+    ]
+    
+    // Shop 4: Warung Sate & Grill (Grilled Foods)
+    let shop4Menu = [
+        Menu(name: "Sate Ayam", price: 15000, description: "Chicken satay with peanut sauce (10 sticks)"),
+        Menu(name: "Sate Kambing", price: 20000, description: "Lamb satay with sweet soy sauce (10 sticks)"),
+        Menu(name: "Sate Padang", price: 18000, description: "Beef satay with spicy curry sauce"),
+        Menu(name: "Ikan Bakar", price: 22000, description: "Grilled fish with sambal"),
+        Menu(name: "Cumi Bakar", price: 25000, description: "Grilled squid with sambal"),
+        Menu(name: "Nasi Bakar", price: 12000, description: "Grilled rice wrapped in banana leaf")
+    ]
+    
+    // Shop 5: Depot Nasi Padang (Padang Style Food)
+    let shop5Menu = [
+        Menu(name: "Rendang", price: 20000, description: "Spicy beef in coconut milk with rice"),
+        Menu(name: "Ayam Pop", price: 15000, description: "Boiled then fried chicken with rice"),
+        Menu(name: "Gulai Ikan", price: 18000, description: "Fish curry with rice"),
+        Menu(name: "Sambal Ijo", price: 5000, description: "Green chili sambal"),
+        Menu(name: "Perkedel", price: 3000, description: "Potato fritter (per piece)"),
+        Menu(name: "Tempe Orek", price: 4000, description: "Sweet and spicy tempeh"),
+        Menu(name: "Sayur Nangka", price: 8000, description: "Young jackfruit curry")
     ]
     
     return [
         Shop(name: "Warung Makan Ibu Siti", menu: shop1Menu),
         Shop(name: "Kantin Pak Budi", menu: shop2Menu),
-        Shop(name: "Minuman Segar", menu: shop3Menu)
+        Shop(name: "Minuman Segar", menu: shop3Menu),
+        Shop(name: "Warung Sate & Grill", menu: shop4Menu),
+        Shop(name: "Depot Nasi Padang", menu: shop5Menu)
     ]
 }
 
