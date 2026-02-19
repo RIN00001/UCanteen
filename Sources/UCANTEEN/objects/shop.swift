@@ -1,4 +1,6 @@
 //Class shop - contains name and menu
+import Foundation
+
 class Shop {
     var name: String
     var menu: [Menu]

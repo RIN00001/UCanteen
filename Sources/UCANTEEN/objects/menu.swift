@@ -1,4 +1,6 @@
 //class menu contains name, price, and description of a menu item
+import Foundation
+
 class Menu {
     var name: String
     var price: Double

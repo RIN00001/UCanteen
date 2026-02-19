@@ -2,6 +2,8 @@
 Class user - contains keranjang (shopping cart) and functions to checkout.
 Also be able to check order history
 */
+import Foundation
+
 class User {
     var keranjang: Keranjang
     var orderHistory: [Keranjang]

@@ -1,4 +1,6 @@
 //Class keranjang (shopping cart) - contains list of items in the cart and total price
+import Foundation
+
 class Keranjang {
     var items: [Menu]
     var totalPrice: Double
